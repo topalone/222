@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<title>网页推荐</title>
+	<script>
+function mymessage()
+{
+    alert("提交成功");
+}
+</script>
+</head>
+<body>
+<h1>你推荐的网页</h1>
+<form action="testshujuku.php" method="post">
+  <p>网站名称： <input type="text" name="name" /></p>
+  <p>网站地址： <input type="text" name="address" /></p>
+  <input type="submit" value="Submit"  onclick="mymessage()"/>
+</form>
+</body>
+</html>

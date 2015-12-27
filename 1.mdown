@@ -1,0 +1,86 @@
+#我的能力提升step2答题卡
+
+###1.请写出你当前的内网ip以及外网ip(如果有), 子网掩码, 当前网关ip
+内网ip       172.18.92.155
+子网掩码     255.255.255.0
+当前网关ip   172.18.92.1
+
+###2.请写出你当前的DNS服务器, 学校的DNS服务器, DNS服务器作用
+当前的DNS服务器  202.202.32.33
+学校的DNS服务器  61.128.128.68
+DNS服务器作用是用域名代替复杂难记的ip地址
+
+###3.TCP与UDP的区别
+TCP：面向连接。UDP：面向非连接。
+
+###4.ip协议和ip区别
+iP协议是传输规则，ip是计算机在网络上的地址
+
+###5.简述TCP/IP模型和OSI参考模型
+TCP/IP模型包括四层：网络接口层，网际层，传输层，应用层
+OSI参考模型包括七层：物理层，数据链路层，网络层，传输层，会话层，表示层，应用层
+
+###6.http/https协议的区别, ws/wss协议的区别
+HTTP 是在 TCP 之上实现的而WS是直接基于 TCP 实现的
+
+###7.进程和线程的区别
+进程占用系统资源，可以拥有若干线程，是分配资源的基本单位
+线程基本不占用系统资源，是独立运行和独立调度的基本单位
+
+###8.多个进程并发执行是如何实现的
+程序不再一条指令执行完接着执行下一条指令且直到程序逻辑结束才执行另一个程序
+
+###9.UNIX和Linux和Windows的区别
+UNIX和Linux和Windows的区别
+Windows系列是完全的多任务操作系统，而linux和unix不是。Linux事实上是Unix的一种版本
+
+###10.Linux的各个发行版以及各个发行版的主要特点
+Android:是基于Linux的内核开发的操作系统，在智能手机和平板电脑中广泛使用。
+StartOS:操作系统具有运行速度快，安全稳定，界面美观，操作简洁明快等特点。
+等等
+
+###11.常用shell种类
+常用shell种类有ash、bash、ksh、csh、zsh等
+
+###12.本条shell命令的作用export PATH="/usr/local/sbin:$PATH"
+本条shell命令的作用export PATH="/usr/local/sbin:$PATH"
+设置一个环境变量，并赋值。
+
+
+###13.试解释下列结构体意义
+/*
+ *  /linux/time.h
+ */
+
+#ifndef _LINUX_TIME_H
+#define _LINUX_TIME_H
+
+struct timeval {
+    long    tv_sec;     /* seconds */
+    long    tv_usec;    /* microseconds */
+};
+
+###struct timezone {
+    int tz_minuteswest; /* minutes west of Greenwich */
+    int tz_dsttime; /* type of dst correction */
+作用为计算系统时间与Greenwich的时间的差
+
+###14.swap区存在的意义
+.swap区存在的意义是当物理内存不足时，自动分出一部分填充物理内存的空缺
+
+###15.操作系统一共有多少端口
+65536个
+
+###16.vim里剪切复制粘贴命令是什么
+yy ， p
+
+###17.什么是SQL注入
+SQL注入是通过把SQL命令插入到Web表单提交或输入域名或页面请求的查询字符串，最终达到欺骗服务器执行恶意的SQL命令。
+
+###18.什么是XSS
+XSS是恶意攻击者往Web页面里插入恶意Script代码
+
+###19.什么是NoSQL
+NoSQL是非关系型的数据库
+
+
